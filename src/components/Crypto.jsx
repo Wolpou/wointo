@@ -44,8 +44,10 @@ const Crypto = () => {
             
             {
                 coins.length ? 
-            
             <div className='coins'>
+            <div class="search">
+                <input type="text" name="text" className="input" placeholder="  type here..." value={search} onChange={searchHandler}/>
+            </div>               
                  {
                     searchedCoins.map(coin => <Coin 
                      key={coin.id}
